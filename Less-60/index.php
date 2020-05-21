@@ -94,7 +94,7 @@ if(!isset($_POST['answer_key']))
 		
 			$id = '("'.$id.'")';
 			// Querry DB to get the correct output
-			$sql="SELECT * FROM security.users WHERE id=$id LIMIT 0,1";
+			$sql="SELECT * FROM sqli_labs_security.users WHERE id=$id LIMIT 0,1";
 			$result=mysqli_query($con, $sql);
 			$row = mysqli_fetch_array($result);
 

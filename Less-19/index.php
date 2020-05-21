@@ -100,7 +100,7 @@ if(isset($_POST['uname']) && isset($_POST['passwd']))
 		if($row1)
 			{
 			echo '<font color= "#FFFF00" font size = 3 >';
-			$insert="INSERT INTO `security`.`referers` (`referer`, `ip_address`) VALUES ('$uagent', '$IP')";
+			$insert="INSERT INTO `sqli_labs_security`.`referers` (`referer`, `ip_address`) VALUES ('$uagent', '$IP')";
 			mysqli_query($insert);
 			//echo 'Your IP ADDRESS is: ' .$IP;
 			echo "</font>";
