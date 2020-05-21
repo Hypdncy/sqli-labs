@@ -40,7 +40,7 @@ $con1 = mysqli_connect($host,$dbuser,$dbpass, $dbname);
 
    
    $sql = "SELECT * FROM users WHERE username='$username' and password='$password'";
-   if (@mysqli_multi_query($con1, $sql))
+   if (@mysqli_multi_query($con1, $con, $sql))
    {
         /* store first result set */
       if($result = @mysqli_store_result($con1))

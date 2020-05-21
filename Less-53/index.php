@@ -22,7 +22,7 @@ if(isset($id))
 
 	$sql="SELECT * FROM users ORDER BY '$id'";
 	/* execute multi query */
-	if (mysqli_multi_query($con1, $sql))
+	if (mysqli_multi_query($con1, $con, $sql))
 	{
 
 		?>

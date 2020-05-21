@@ -45,7 +45,7 @@ else
 
 $sql="SELECT * FROM users WHERE id=$id LIMIT 0,1";
 /* execute multi query */
-if (mysqli_multi_query($con1, $sql))
+if (mysqli_multi_query($con1, $con, $sql))
 {
     
     
